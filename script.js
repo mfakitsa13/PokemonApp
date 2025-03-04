@@ -1,4 +1,3 @@
-/* Set Up Constants */
 const searchInput = document.getElementById("search-input");
 const searchForm = document.getElementById("search-form");
 const spriteContainer = document.getElementById("sprite-container");
@@ -14,7 +13,7 @@ const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
 
-/* Functions */
+
 const getPokemon = async () => {
   try {
     const pokemonNameOrId = searchInput.value.toLowerCase();
@@ -64,7 +63,6 @@ const resetDisplay = () => {
   speed.textContent = '';
 };
 
-/* Event Listeners */
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   getPokemon();
